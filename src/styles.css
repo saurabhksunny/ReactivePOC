@@ -1,0 +1,203 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+.employment_card {
+    height: 175px;
+    margin-bottom: 20px;
+}
+
+.employment_card h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2e2e2e;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+/*CSS for Custom Radio button Starts*/
+
+.radioContainer {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radioContainer label {
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button and hide it with opacity property */
+.checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #212121;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* When the radio button is checked, add a blue background and show it on screen in active state */
+.radioContainer input:checked ~ .checkmark {
+    background-color: #4cd964;
+    border: 1px solid #4cd964;
+    opacity: 1;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioContainer input:checked ~ .checkmark:after {
+    color: #ffffff;
+    display: block;
+    content: "\f00c";
+    font-family: 'FontAwesome';
+}
+
+/* Style the indicator (dot/circle) */
+.radioContainer .checkmark:after {
+    top: 1px;
+    left: 4px;
+}
+
+/*CSS for Custom Radio button Ends*/
+
+.form_fields h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form_fields .form-control {
+    height: 45px;
+    border: 2px solid #000;
+}
+
+.form_fields .help-block {
+    font-size: 18px;
+    font-weight: 100;
+    color: #888888;
+}
+
+.form_fields .help-block a {
+    font-weight: normal;
+}
+
+.submit_btn {
+    background: #c7222a;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Roboto;
+}
+
+.submit_btn:hover {
+    color: #fff;
+}
+
+.employmemt_active_card {
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px 10px 34px -10px #000000;
+}
+
+.employmemt_active_card label,
+.navbar {
+    border: 0 none;
+}
+
+.navbar-default {
+    background: #c7222a;
+    box-shadow: none;
+    margin-bottom: 0;
+    min-height: auto;
+}
+
+.navbar-toggle {
+    border: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    height: auto;
+    float: none;;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0px none;
+    box-shadow: none;
+}
+
+.my_universe_text {
+    color: #fff;
+    margin: 5px 10px 0 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .top_header {
+        padding: 15px;
+    }
+    .col-xs-4{
+        width: 100%
+    }
+    .submit_btn {
+        width: 100%;
+    }
+    .navbar-brand>img {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 619px) {
+    .col-xs-4{
+        width: 50%
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        float: left;
+    }
+    .navbar-nav {
+        margin-left: 30px;
+    }
+    .hide_collapsible_btn{
+        display: none;
+    }
+} 

@@ -1,0 +1,25 @@
+label {
+    display: block;
+}
+
+small {
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.panField {
+    width: 50%;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.success .form-control{
+    border:1px solid green;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .panField {
+        width: 60%;
+    }
+}

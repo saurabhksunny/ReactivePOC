@@ -1,0 +1,28 @@
+<h4 class="text-center">Some basic details about you</h4>
+
+<form onsubmit="verifyPANDetails(f)" #f="ngForm">
+  <div class="form-group" [class.has-error]="validPANName" [class.has-success]="successPan">
+    <label for="exampleInputEmail1">Name <small>As mentioned on PAN card</small></label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="nameValue" 
+      [(ngModel)]="nameV" 
+      id="nameInput" 
+      placeholder="Name">
+    <span class="text-danger" *ngIf="validPANName">Please type your name which matches with your PAN</span>
+  </div>
+  <div class="form-group" [class.has-error]="validPANNum" [class.has-success]="successPan">
+    <label for="exampleInputPassword1">What's your PAN number?</label>
+    <input 
+      (keyup)="onKeydown($event)"
+      type="text" 
+      class="form-control panField" 
+      name="panValue" 
+      [(ngModel)]="panV" 
+      id="panInput"
+      placeholder="e.g. AS** **** **" >
+      <span class="text-danger" *ngIf="validPANNum">Please input valid PAN number</span>
+    <a href="#" *ngIf="validCount" (click)="verifyPANDetails()">Validate PAN</a>
+  </div>
+</form>

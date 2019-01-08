@@ -31,7 +31,6 @@ export class BasicDetailsComponent implements OnInit {
       this.validCount=true;
     }else if(this.panV.length!=10){
       this.validCount=false;
-       this.successPan = false;
     }
   } 
 

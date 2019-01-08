@@ -24,5 +24,6 @@
       placeholder="e.g. AS** **** **" >
       <span class="text-danger" *ngIf="validPANNum">Please input valid PAN number</span>
     <a href="#" *ngIf="validCount" (click)="verifyPANDetails()">Validate PAN</a>
+    <a  *ngIf="!validCount">Validate PAN</a>
   </div>
 </form>
